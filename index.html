@@ -61,7 +61,31 @@
             <span class="hero__speedo-unit">км/ч</span>
             <span class="hero__speedo-hint">скролл = газ</span>
           </div>
-          <img src="img/scooter-hero.png" alt="Электросамокат" class="hero__product-img" id="hero-scooter" width="480" height="480">
+          <div class="hero__product-wrap" id="hero-scooter" role="img" aria-label="Электросамокат">
+            <img class="hero__product-img hero__product-img--photo" id="hero-scooter-photo" alt="" width="480" height="480" hidden>
+            <svg class="hero__product-img hero__product-img--svg" id="hero-scooter-svg" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="scGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="240" cy="400" rx="160" ry="20" fill="url(#scGlow)"/>
+              <circle cx="130" cy="355" r="42" stroke="#fff" stroke-width="3" opacity="0.85"/>
+              <circle cx="130" cy="355" r="18" stroke="#fff" stroke-width="2" opacity="0.4"/>
+              <circle cx="330" cy="355" r="42" stroke="#fff" stroke-width="3" opacity="0.85"/>
+              <circle cx="330" cy="355" r="18" stroke="#fff" stroke-width="2" opacity="0.4"/>
+              <path d="M90 320 Q240 280 390 320 L370 295 Q240 260 110 295 Z" fill="rgba(255,255,255,0.06)" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M175 295 L185 130" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+              <path d="M148 130 H222" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+              <path d="M148 130 V148 M222 130 V148" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+              <rect x="178" y="108" width="14" height="22" rx="3" fill="rgba(255,255,255,0.12)" stroke="#fff" stroke-width="1.5"/>
+              <path d="M110 295 Q130 270 155 295" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+              <path d="M325 295 Q345 270 370 295" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+              <circle cx="185" cy="250" r="5" fill="#22c55e" opacity="0.9"/>
+              <text x="240" y="90" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Inter,sans-serif" font-size="14" font-weight="600" letter-spacing="0.2em">KWT</text>
+            </svg>
+          </div>
           <div class="hero__card hero__card--float hero__card--1" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>
             Гарантия
@@ -315,6 +339,7 @@
 
   <div id="site-footer"></div>
 
+  <script src="js/paths.js"></script>
   <script src="js/data.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/form.js"></script>
